@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+header {
+    position: relative;
+}
+a{
+
+    font-weight: 300;
+    color: black;
+}
+.top-logo {
+  
+}
+
+
+.nav-container {
+    width: 100%;
+    position: fixed;
+    color: white;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+    /* background-color: transparent; */
+    display: flex;
+    height: 10dvh;
+    position: relative;
+
+}
+
+.nav-btn {
+    width: 2rem;
+    height: 3rem;
+    position: absolute;
+    top: 1.2rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all ease 1s;
+    /* background-color: blueviolet; */
+    z-index: 5;
+    padding-block: .7rem;
+}
+.nav-btn .lines {
+    background-color: #343F4F;
+    width: 25px;
+    height: 3px;
+    color: black;
+    transition: all ease .3s;
+}
+
+.lines:first-child{
+ 
+}
+.lines:nth-child(1){
+    background-color: #525a66;
+}
+.lines:last-child{
+  /* background-color: black; */
+}
+.nav-btn:hover {
+    cursor: pointer;
+}
+
+
+.logo-container {
+    position: relative;
+    margin-inline: auto;
+    z-index: 5;
+    top: 2rem;
+    color: black;
+}
+
+.ul-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 5rem 15rem 0 ; 
+    /* right: -35rem; */
+    /* right:0rem; */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(154, 0, 0);
+    width: 100dvw;
+    height: 100dvh;
+    transform: translate(-420px);
+}
+.ul-wrapper a, li {
+    color: rgb(0, 0, 0);
+    z-index: 5;
+
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-btn {
+        width: 3rem;
+        height: 3rem;
+   
+        /* right: 3rem; */
+
+    }
+    .ul-wrapper {
+        width: 15rem;
+        transform: translate(-250px);
+
+    }
+}
+
+
+
+.section-one {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+
+
+
+}
+.background-container {
+    position: absolute;
+    z-index: -1;
+    /* height: 100dvh; */
+    background-image: url('./images/OQ5KAW0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+.section-one .headline{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    /* background-color: red; */
+}
+.section-one .headline span{
+    /* width: 25%; */
+    display: inline-block;
+    margin: 10px;
+}
+.links {
+    /* background-color: aqua; */
+    z-index: 10;
+    position: absolute;
+    bottom: 1rem;
+    width: 20rem;
+    left: 1rem;
+    /* background-color: red; */
+}
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+.section-two {
+margin-top: 70vh;
+overflow-x: hidden;
+position: relative;
+
+}
+.container {
+    height: 100vh; 
+    width: 300%;
+    overflow: hidden;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: row-reverse;
+    
+}
+.container img {
+    width: 300px;
+}
+.section-two  .cards{
+    display: flex;
+    width: 100dvw;
+    /* width: calc(100vw * 3); */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.section-two .one {
+    /* background-color: red; */
+}   
+.section-two .two {
+    background-color: blue;
+}
+.section-two .three {
+    background-color: yellow;
+}
+@media screen and (min-width: 700px){
+    .section-one .headline{
+
+        /* width: 50%; */
+
+    }
+    .container img {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1200px){
+
+    .section-one .headline{
+
+        width: 50%;
+
+    }
+    .background-container {
+
+        width: 500px;
+        height: 500px;
+    }
+    .container img {
+        width: 500px;
+    }
+
+}
+
