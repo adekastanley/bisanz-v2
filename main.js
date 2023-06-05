@@ -110,11 +110,11 @@ intro.to(headlineLetters, {
 
 // })
 intro.from('.header', {
-    y: 100,
+    // y: -10,
 
     opacity: 0,
     ease: "power1.in",
-    duration: .2,
+    duration: .5,
 
 })
 
